@@ -36,7 +36,7 @@ module.exports = (env, argv) => {
     const baseStaticPath = process.env.STATIC_URL || "/static/";
     const publicPath = url.resolve(baseStaticPath, "assets/");
     output = {
-      path: resolve("scb_app/static/assets/"),
+      path: resolve("saleor/static/assets/"),
       filename: "[name].[chunkhash].js",
       chunkFilename: "[name].[chunkhash].js",
       publicPath: publicPath
@@ -48,7 +48,7 @@ module.exports = (env, argv) => {
     });
   } else {
     output = {
-      path: resolve("scb_app/static/assets/"),
+      path: resolve("saleor/static/assets/"),
       filename: "[name].js",
       chunkFilename: "[name].js",
       publicPath: "/static/assets/"
@@ -62,10 +62,10 @@ module.exports = (env, argv) => {
 
   return {
     entry: {
-      dashboard: "./scb_app/static/dashboard/js/dashboard.js",
-      "dashboard-next": "./scb_app/static/dashboard-next/index.tsx",
-      document: "./scb_app/static/dashboard/js/document.js",
-      storefront: "./scb_app/static/js/storefront.js"
+      dashboard: "./saleor/static/dashboard/js/dashboard.js",
+      "dashboard-next": "./saleor/static/dashboard-next/index.tsx",
+      document: "./saleor/static/dashboard/js/document.js",
+      storefront: "./saleor/static/js/storefront.js"
     },
     output: output,
     module: {
@@ -116,9 +116,9 @@ module.exports = (env, argv) => {
           loader: fileLoaderPath,
           include: [
             resolve("node_modules"),
-            resolve("scb_app/static/fonts"),
-            resolve("scb_app/static/images"),
-            resolve("scb_app/static/dashboard/images")
+            resolve("saleor/static/fonts"),
+            resolve("saleor/static/images"),
+            resolve("saleor/static/dashboard/images")
           ]
         }
       ]

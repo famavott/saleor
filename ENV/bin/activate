@@ -74,3 +74,7 @@ fi
 if [ -n "${BASH:-}" -o -n "${ZSH_VERSION:-}" ] ; then
     hash -r
 fi
+
+export SECRET_KEY='%qz1!%7li03)l==spb^^@m36--q1wk!^oc+-sy9ntaogz$jn_w'
+export DATABASE_URL='postgres://dev-scb:Password1@localhost:5432/scb_dev'
+export DEBUG='True'

@@ -625,17 +625,17 @@ GRAPHENE = {
 
 INSTALLED_APPS.append('scb_app')
 
-STATICFILES_DIRS = [
-    ('assets', os.path.join(PROJECT_ROOT, 'scb_app/static/assets')),
-    ('favicons', os.path.join(PROJECT_ROOT, 'scb_app/static/favicons')),
-    ('images', os.path.join(PROJECT_ROOT, 'scb_app/static/images')),
-    ('dashboard', os.path.join(PROJECT_ROOT, 'scb_app/static/dashboard'))]
+# STATICFILES_DIRS = [
+#     ('assets', os.path.join(PROJECT_ROOT, 'scb_app/static/assets')),
+#     ('favicons', os.path.join(PROJECT_ROOT, 'scb_app/static/favicons')),
+#     ('images', os.path.join(PROJECT_ROOT, 'scb_app/static/images')),
+#     ('dashboard', os.path.join(PROJECT_ROOT, 'scb_app/static/dashboard'))]
 
-TEMPLATES = [{
-    'BACKEND': 'django.template.backends.django.DjangoTemplates',
-    'DIRS': [os.path.join(PROJECT_ROOT, 'scb_app/templates'), os.path.join(PROJECT_ROOT, 'templates')],
-    'OPTIONS': {
-        'debug': DEBUG,
-        'context_processors': context_processors,
-        'loaders': loaders,
-        'string_if_invalid': '<< MISSING VARIABLE "%s" >>' if DEBUG else ''}}]
+# TEMPLATES = [{
+#     'BACKEND': 'django.template.backends.django.DjangoTemplates',
+#     'DIRS': [os.path.join(PROJECT_ROOT, 'scb_app/templates'), os.path.join(PROJECT_ROOT, 'templates')],
+#     'OPTIONS': {
+#         'debug': DEBUG,
+#         'context_processors': context_processors,
+#         'loaders': loaders,
+#         'string_if_invalid': '<< MISSING VARIABLE "%s" >>' if DEBUG else ''}}]
