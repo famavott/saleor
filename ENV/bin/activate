@@ -78,3 +78,7 @@ fi
 export SECRET_KEY='%qz1!%7li03)l==spb^^@m36--q1wk!^oc+-sy9ntaogz$jn_w'
 export DATABASE_URL='postgres://dev-scb:Password1@localhost:5432/scb_dev'
 export DEBUG='True'
+export BRAINTREE_SANDBOX_MODE='True'
+export BRAINTREE_MERCHANT_ID='5syrtzqnrcw9g4nm'
+export BRAINTREE_PUBLIC_KEY='92z2n2774rpbbw44'
+export BRAINTREE_PRIVATE_KEY='64f383a8a688016fa1eb3a74f75f0154'
